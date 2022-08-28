@@ -4,12 +4,12 @@
 class Exercises:
     """Exercises"""
 
-    def multiply_or_sum(self, a: int, b: int) -> str:
+    def multiply_or_sum(self, a: int, b: int) -> int:
         """1"""
         if (a*b) <= 1000:
-            return print("The result is: ", a*b)
+            return a*b
         else:
-            return print("The result is: ", a+b)
+            return a+b
 
     def print_sum(self, number: int) -> str:
         """2"""
@@ -45,8 +45,6 @@ class Exercises:
             if number % 5 == 0:
                 print(number)
 
-
-execute = Exercises()
 
 #execute.multiply_or_sum(40, 30)
 # execute.print_sum(10)
