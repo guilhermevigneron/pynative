@@ -54,9 +54,16 @@ class Exercises:
 
         return result_list
 
-# execute.multiply_or_sum(40, 30)
-# execute.print_sum(10)
-# execute.print_even_char("pynative")
-# execute.remove_char("pynative", 2)
-# execute.first_last_same([10, 20, 32, 40, 11])
-# execute.divisible_by_5([10, 20, 32, 40, 11])
+    def count_substring(self, phrase: str, substring: str) -> int:
+        """7"""
+        count = 0
+
+        for word in phrase.split():
+            if word == substring:
+                count += 1
+        return count
+
+
+"""""
+
+"""""

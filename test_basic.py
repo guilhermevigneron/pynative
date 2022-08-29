@@ -25,6 +25,10 @@ class Test_basic(unittest.TestCase):
         self.assertEqual(exercise.divisible_by_5(
             [10, 20, 33, 46, 55]), [10, 20, 55])
 
+    def test_count_substring(self):
+        self.assertEqual(exercise.count_substring(
+            "Emma is good developer. Emma is a writer", "Emma"), 2)
+
 
 if __name__ == '__main__':
     unittest.main()
