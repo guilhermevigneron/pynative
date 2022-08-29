@@ -18,8 +18,11 @@ class Test_basic(unittest.TestCase):
     def test_remove_char(self):
         self.assertEqual(exercise.remove_char("pynative", 2), "native")
 
-    def test_first_last_name(self):
+    def test_first_last_name_true(self):
         self.assertEqual(exercise.first_last_same([10, 20, 30, 40, 10]), True)
+
+    def test_first_last_name_false(self):
+        self.assertEqual(exercise.first_last_same([10, 20, 30, 40, 60]), False)
 
     def test_divisible_by_5(self):
         self.assertEqual(exercise.divisible_by_5(
@@ -28,6 +31,12 @@ class Test_basic(unittest.TestCase):
     def test_count_substring(self):
         self.assertEqual(exercise.count_substring(
             "Emma is good developer. Emma is a writer", "Emma"), 2)
+
+    def test_check_palindrome_true(self):
+        self.assertEqual(exercise.check_palindrome(121), True)
+
+    def test_check_palindrome_false(self):
+        self.assertEqual(exercise.check_palindrome(123), False)
 
 
 if __name__ == '__main__':

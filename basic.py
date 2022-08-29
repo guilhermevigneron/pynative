@@ -1,6 +1,10 @@
 # Python Basic Exercise for Beginners
 # from https://pynative.com/python-basic-exercise-for-beginners/
 
+import string
+from xmlrpc.client import Boolean
+
+
 class Exercises:
     """Exercises"""
 
@@ -63,7 +67,16 @@ class Exercises:
                 count += 1
         return count
 
+    def check_palindrome(self, number: int) -> bool:
+        """9"""
+        original_num = number
+        reverse_num = 0
+        while number > 0:
+            reminder = number % 10
+            reverse_num = (reverse_num * 10) + reminder
+            number = number // 10
 
-"""""
-
-"""""
+        if original_num == reverse_num:
+            return True
+        else:
+            return False
