@@ -38,6 +38,13 @@ class Test_basic(unittest.TestCase):
     def test_check_palindrome_false(self):
         self.assertEqual(exercise.check_palindrome(123), False)
 
+    def test_mix_two_lists(self):
+        self.assertEqual(exercise.mix_two_lists([10, 20, 25, 30, 35], [
+                         40, 45, 60, 75, 90]), [25, 35, 40, 60, 90])
+
+    def test_extract_digit_reverse(self):
+        self.assertEqual(exercise.extract_digit_reverse(543),  "3 4 5")
+
 
 if __name__ == '__main__':
     unittest.main()

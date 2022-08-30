@@ -1,9 +1,6 @@
 # Python Basic Exercise for Beginners
 # from https://pynative.com/python-basic-exercise-for-beginners/
 
-import string
-from xmlrpc.client import Boolean
-
 
 class Exercises:
     """Exercises"""
@@ -80,3 +77,30 @@ class Exercises:
             return True
         else:
             return False
+
+    def mix_two_lists(self, list1: list, list2: list) -> list:
+        """10"""
+        list1_odd = []
+        list2_even = []
+
+        for number in list1:
+            if number % 2 == 1:
+                list1_odd.append(number)
+
+        for number in list2:
+            if number % 2 == 0:
+                list2_even.append(number)
+
+        return list1_odd + list2_even
+
+    def extract_digit_reverse(self, number: int) -> str:
+        """11"""
+        reverse_num_str = ""
+        reverse_num = 0
+        while number > 0:
+            reminder = number % 10
+            reverse_num = reminder
+            reverse_num_str += str(reverse_num) + " "
+            number = number // 10
+
+        return reverse_num_str.strip()
