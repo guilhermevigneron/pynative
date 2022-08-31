@@ -45,6 +45,9 @@ class Test_basic(unittest.TestCase):
     def test_extract_digit_reverse(self):
         self.assertEqual(exercise.extract_digit_reverse(543),  "3 4 5")
 
+    def test_calculate_income_tax(self):
+        self.assertEqual(exercise.calculate_income_tax(45000),  6000)
+
 
 if __name__ == '__main__':
     unittest.main()

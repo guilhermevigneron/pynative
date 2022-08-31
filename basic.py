@@ -1,6 +1,8 @@
 # Python Basic Exercise for Beginners
 # from https://pynative.com/python-basic-exercise-for-beginners/
 
+from logging import ERROR
+
 
 class Exercises:
     """Exercises"""
@@ -104,3 +106,15 @@ class Exercises:
             number = number // 10
 
         return reverse_num_str.strip()
+
+    def calculate_income_tax(self, income: int) -> int:
+        """12"""
+        if income <= 10000:
+            return income * 0
+        elif (income > 10000) and (income <= 20000):
+            return (income * 0.1) - 1000
+        elif (income > 20000):
+            return (income * 0.2) - 3000
+        else:
+            return ERROR
+    
